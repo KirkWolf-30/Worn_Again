@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+
+.primaryBtn {
+  background-color: #1B6D1B !important;
+  color: #FFFFFF !important;
+}
+
+.titles {
+  font-family: "Montserrat", serif !important;
+  color: #333;
+}
+
+.midTitle {
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.stat {
+  font-size: 82px;
+  font-weight: 700;
+}
+
+.texts, .tag {
+  font-family: "Lato", serif;
+  color: #606060;
+  font-size: 16px;
+}
+
+section {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.tag {
+  border-radius: 30px;
+  border: 1px solid #E8E8E8;
+  display: flex;
+  padding: 8px 11px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardTitle {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.highlight {
+  font-weight: bold;
+  padding: 1px 8px;
+  background-color: #BEB;
+  border-radius: 30px;
+}
+
+a.arrowBtn {
+  background-color: #FFFFFF;
+  border-radius: 100PX;
+  padding: 4px;
+  color: #606060;
+}
+
+a.arrowBtn:hover {
+  background-color: #B6B6B6;
+  border-radius: 100PX;
+  padding: 4px;
+  color: #FFFFFF;
+}
+
+.cardsContainer {
+  border: 1px solid #E8E8E8;
+  border-radius: 16px;
+}
+
+nav {
+  background-color: #FFFFFF !important;
+  color: #333 !important;
+}
+nav .navbar-brand {
+  font-family: "Montserrat", serif !important;
+  font-weight: 700;
+  font-size: 16px;
+}
+nav .nav-link {
+  font-family: "Lato", serif;
+  font-size: 16px;
+  border-radius: 8px !important;
+}
+
+#Home .mainTitle {
+  font-size: 56px;
+  font-weight: 400;
+}
+#Home .videoContainer {
+  width: 100%;
+  position: relative;
+}
+#Home .videoContainer video {
+  width: 100%;
+  height: 573px !important;
+  border-radius: 42px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#Home .videoContainer .overLay {
+  width: 100%;
+  height: 573px !important;
+  border-radius: 42px;
+  background: linear-gradient(260deg, rgba(217, 217, 217, 0) 0%, rgba(70, 69, 69, 0.62) 100%);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+#Home .videoContainer .social {
+  background-color: #FFFFFF;
+  color: #333;
+}
+#Home .videoContainer .socialLinksContainer {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+#Solution .swipeCard {
+  background-color: #F9F9F9;
+  border-radius: 24px;
+}
+
+.accordion-button::after {
+  width: 84px !important;
+  height: 84px !important;
+  background-image: url(../images/accordionIcon.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 100% !important;
+  transition: var(--bs-accordion-btn-icon-transition);
+  border: none !important;
+  outline: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #333;
+  background-color: rgba(34, 139, 34, 0.1) !important;
+  box-shadow: none !important;
+  border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+}
+
+.show {
+  color: #333;
+  background-color: rgba(34, 139, 34, 0.1) !important;
+  transition: var(--bs-accordion-btn-icon-transition) !important;
+}
+
+.accordion-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.accordionTitle {
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.accordion-body {
+  font-size: 18px;
+}
+
+.accordion-flush > .accordion-item > .accordion-collapse {
+  border-bottom-left-radius: 16px !important;
+  border-bottom-right-radius: 16px !important;
+  transition: var(--bs-accordion-btn-icon-transition) !important;
+}
+
+.accordion-item {
+  border-radius: 16px !important;
+  border: none !important;
+}
+.accordion-item button {
+  background-color: #F9F9F9 !important;
+  border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+}
+
+.mainText {
+  font-family: "Lato", serif !important;
+  font-size: 18px !important;
+  color: #333 !important;
+}
+
+.actionLink {
+  color: #333;
+  font-weight: bold;
+  font-family: "Lato", serif;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#Footer {
+  background-image: url(../images/FooterBg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+}
+#Footer .footerTitle {
+  color: #BEB;
+  font-family: "Montserrat", serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+#Footer .minTitle, #Footer .linkTtile {
+  color: #FFFFFF;
+  font-family: "Montserrat", serif !important;
+  font-size: 26px;
+  font-weight: 300;
+}
+#Footer .linkTtile {
+  font-weight: 700;
+}
+#Footer .linkTexts {
+  color: #FFFFFF !important;
+  font-family: "Lato", serif !important;
+  font-size: 18px !important;
+  font-weight: 300;
+  color: #FFFFFF !important;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  .titles {
+    font-size: 26px;
+  }
+  .mainTitle {
+    font-size: 36px !important;
+  }
+  .stat {
+    font-size: 56px;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  .accordionTitle {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .accordion-button::after {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .accordion-body {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=index.css.map */

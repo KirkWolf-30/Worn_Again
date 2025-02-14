@@ -1,0 +1,324 @@
+$primaryFont:"Montserrat", serif;
+$SecondaryFont:"Lato", serif;
+$primaryColor: #1B6D1B;
+$SecondaryColor: #FFFFFF;
+$TextColor: #333;
+$TextSeconddaryColor : #606060;
+$Highlight: #BEB;
+$CardColor: #F9F9F9;
+$StrokeColor: #E8E8E8;
+$activeAccordion:rgba(34, 139, 34, 0.10);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $SecondaryColor;
+}
+
+::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+}
+
+.primaryBtn{
+    background-color: $primaryColor !important;
+    color: $SecondaryColor !important;
+}
+
+.titles{
+    font-family: $primaryFont !important;
+    color: $TextColor;
+}
+
+.midTitle{
+    font-size: 38px;
+    font-weight: 400;
+}
+
+.stat{
+font-size: 82px;
+font-weight: 700;
+}
+
+.texts, .tag{
+    font-family: $SecondaryFont;
+    color: $TextSeconddaryColor;
+    font-size: 16px;
+    
+}
+
+section{
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+.tag{
+border-radius: 30px;
+border: 1px solid $StrokeColor;
+display: flex;
+padding: 8px 11px;
+justify-content: center;
+align-items: center;
+
+}
+
+.cardTitle{
+    font-size: 26px;
+    font-weight: 700;
+}
+.highlight{
+    font-weight: bold;
+    padding: 1px 8px;
+    background-color: $Highlight;
+    border-radius: 30px;
+}
+
+a.arrowBtn{
+ background-color: $SecondaryColor;
+ border-radius: 100PX;
+ padding: 4px;
+ color: $TextSeconddaryColor;
+}
+
+a.arrowBtn:hover{
+    background-color: #B6B6B6;
+    border-radius: 100PX;
+    padding: 4px;
+    color: $SecondaryColor;
+   }
+
+
+   .cardsContainer{
+    border: 1px solid $StrokeColor;
+    border-radius: 16px;
+   }
+
+
+
+//Nav
+nav{
+    background-color: $SecondaryColor !important;
+    color: $TextColor !important;
+    .navbar-brand{
+        font-family: $primaryFont !important;
+        font-weight: 700;
+        font-size:  16px;
+    }
+
+    .nav-link{
+        font-family:  $SecondaryFont;
+        font-size:  16px;
+        border-radius: 8px !important;
+    }
+
+}
+
+//Hero
+#Home{
+    .mainTitle{
+        font-size: 56px;
+        font-weight: 400;
+
+    }
+
+    .videoContainer{
+        width: 100%;
+        position: relative;
+
+        video{
+            width: 100%;
+            height: 573px !important;
+            border-radius: 42px;
+            object-fit: cover;
+        }
+
+        .overLay{
+            width: 100%;
+            height: 573px !important;
+            border-radius: 42px;
+            background: linear-gradient(260deg, 
+            rgba(217, 217, 217, 0.00) 0%, 
+            rgba(70, 69, 69, 0.62) 100%);
+
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+        .social{
+            background-color: $SecondaryColor;
+            color: $TextColor; 
+        }
+
+        .socialLinksContainer{
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+        }
+
+    }
+}
+
+
+//Solution
+#Solution{
+
+    .swipeCard{
+        background-color: $CardColor;
+        border-radius: 24px;
+    }
+}
+
+
+//accordion
+
+.accordion-button::after {
+    width: 84px !important;
+    height: 84px !important;
+    background-image: url(../images/accordionIcon.svg) !important;
+    background-repeat: no-repeat;
+    background-size: 100% !important; 
+    transition: var(--bs-accordion-btn-icon-transition);
+
+    border: none !important;
+    outline: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: $TextColor;
+    background-color: $activeAccordion !important;
+    box-shadow: none !important;
+    border-top-left-radius: 16px !important;
+    border-top-right-radius: 16px !important;
+}
+
+.show{
+    color: $TextColor;
+    background-color: $activeAccordion !important;
+    transition: var(--bs-accordion-btn-icon-transition) !important;
+
+}
+
+
+.accordion-button:focus {
+ 
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.accordionTitle{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.accordion-body{
+    font-size: 18px;
+}
+
+.accordion-flush>.accordion-item>.accordion-collapse {
+    border-bottom-left-radius: 16px !important;
+    border-bottom-right-radius: 16px !important;
+    transition: var(--bs-accordion-btn-icon-transition) !important;
+}
+.accordion-item{
+    
+    border-radius: 16px !important;
+    border: none !important;
+    button{
+        background-color: $CardColor !important;
+        border-top-left-radius: 16px !important;
+    border-top-right-radius: 16px !important;
+    }
+}
+
+//ContactUs
+.mainText{
+    font-family: $SecondaryFont !important;
+    font-size: 18px !important;
+    color: $TextColor !important;
+}
+
+.actionLink{
+    color: $TextColor;
+    font-weight: bold;
+    font-family: $SecondaryFont;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#Footer{
+    background-image: url(../images/FooterBg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $SecondaryColor;
+
+    .footerTitle{
+        color: $Highlight;
+        font-family: $primaryFont;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .minTitle, .linkTtile{
+        color: $SecondaryColor;
+        font-family: $primaryFont !important;
+        font-size: 26px;
+        font-weight: 300;
+    }
+
+    .linkTtile{
+        font-weight: 700;
+    }
+
+    .linkTexts{
+        color: $SecondaryColor !important;
+        font-family: $SecondaryFont !important;
+        font-size:  18px !important;
+        font-weight: 300;
+        color: $SecondaryColor !important;
+        text-decoration: none;
+    }
+}
+
+//Resposiveness
+@media screen and (max-width: 480px) {
+
+    .titles{
+        font-size: 26px;
+    }
+
+    .mainTitle{
+        font-size: 36px !important;
+    }
+
+    .stat{
+        font-size: 56px;
+        }
+
+
+        .reverse{
+            flex-direction: column-reverse;
+          }
+
+          .accordionTitle{
+            font-weight: 400;
+            font-size: 18px;
+        }
+
+        .accordion-button::after {
+            width: 40px !important;
+            height: 40px !important;
+
+        }
+
+        .accordion-body{
+            font-size: 14px;
+        }
+  }
