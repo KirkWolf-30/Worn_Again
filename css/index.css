@@ -208,6 +208,20 @@ nav .nav-link {
   font-size: 18px;
 }
 
+.cardLink {
+  text-decoration: none !important;
+}
+
+.hoverAnime {
+  transition: all 0.3s ease;
+  cursor: pointer !important;
+}
+
+.hoverAnime :hover {
+  background-color: #f1f1f1;
+  transition: all 0.3s ease;
+}
+
 #Footer {
   background-image: url(../images/FooterBg.svg);
   background-position: center;
